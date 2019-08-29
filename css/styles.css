@@ -1,0 +1,146 @@
+/* Initial styling for the body to make sure it looks the same on all browsers*/
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1.6em;
+	color: #333;
+	background-color: #efefef;
+}
+
+/* Centering the logo on smaller screens*/
+.logo {
+	margin: 0 auto;
+	display: block;
+}
+
+/* Styling the navigation tab*/
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	text-align: center;
+	margin: 20px 0;
+}
+
+/*Change the display to block to make sure the whole line is clickable on
+smaller screen instead of just the word itself*/
+nav a {
+	color: #4056a1;
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+nav a:visited {
+	color: #4056a1;
+}
+
+/* Responsive images; make sure the banner and card images do not exceed the
+maximum screen width to avoid horizontal scrolling*/
+.banner img, .card img {
+	max-width: 100%;
+}
+
+section h2{
+	text-align: center;
+}
+
+/* Set the text's width to a percentage so that it remains relative to the 
+screen width*/
+#about .about-text {
+	text-align: justify;
+	margin-left: 5%;
+	margin-right: 5%;
+	max-width: 80%;
+}
+/* Added a border to the card to show that it is a clickable item*/
+.card {
+	max-width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #4056a1;
+	border: 4px solid #ddd;
+}
+
+.card:hover {
+		border-color: #4056a1;
+	}
+
+.card a {
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.card a:visited {
+	color: inherit;
+}
+
+footer, footer h2, footer h2 {
+	max-width: 80%;
+	margin: 5%;
+}
+
+@media screen and (min-width: 600px){
+	/* Display the navigation tabs on the same line */
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+	/* display projects in rows */
+	#projects {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	#projects h2 {
+		width: 100%;
+	}
+
+	.card {
+		width: 35%;
+	}
+}
+/* media query for large screen sizes*/
+@media screen and (min-width: 800px){
+
+	/* Display the header elements on the same line */
+	header {
+		display: flex;
+		justify-content: space-between;
+
+	}
+	/* Align the logo to the left of the screen */
+	.logo {
+		margin: 0;
+		justify-content: flex-start;
+	}
+	/* Align the navigation tab to the right of the screen */
+	nav {
+		justify-content: flex-end;
+		
+	}
+
+	nav li {
+		margin-right: 30px;
+	}
+
+	nav a:hover {
+	color: #efefef;
+	background-color: #4056a1;
+	}
+	/* limit the width of the banner to prevent image stretching on very large
+	screens */
+	.banner {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.card {
+		width: 20%;
+	}
+}

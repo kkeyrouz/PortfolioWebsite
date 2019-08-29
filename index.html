@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Portfolio Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<!-- Logo -->
+		<img class="logo" src="images/logo.png" alt="Logo">
+		<!-- Navigation Tab -->
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<!-- Used div for the banner as elements other than an image may be added
+	later on -->
+	<!-- Image by Kevin Ku -->
+	<!-- https://unsplash.com/photos/w7ZyuGYNpRQ -->
+	<div class="banner">
+		<img src="images/banner.jpg" alt="Banner">
+	</div>
+	<!-- Divided the main part of the webpage into 3 separate sections -->
+	<!-- About Section -->
+	<section id="about">
+		<h2>Hi, I'm Karam!</h2>
+		<!-- Used dummy text to see how the text would be displayed on different screen sizes -->
+		<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</section>
+	<!-- Projects Section -->
+	<!-- Included dummy projects that link to google web site -->
+	<!-- The pdf mock design showed both project titles and links to said project. Opted to make the whole card a link instead of showing a hyperlink which is less aesthetic -->
+	<section id="projects">
+		<h2>Projects</h2>
+		<!-- Image by Ilya Pavlov -->
+		<!-- https://unsplash.com/photos/wbXdGS_D17U -->
+		<div class="card">
+			<a href="https://www.google.com">
+				<img src="images/typing.jpg" alt="Typing">
+				<div class="title">
+					Typing Trainer
+				</div>
+			</a>
+		</div>
+		<!-- Image by Danielle Cerullo -->
+		<!-- https://unsplash.com/photos/CQfNt66ttZM -->
+		<div class="card">
+			<a href="https://www.google.com">
+				<img src="images/gym.jpg" alt="Gym">
+				<div class="title">
+					Gym Timer App
+				</div>
+			</a>
+		</div>
+		<!-- Image by Sam Truong Dan -->
+		<!-- https://unsplash.com/photos/-rF4kuvgHhU -->
+		<div class="card">
+			<a href="https://www.google.com">
+				<img src="images/tip.jpg" alt="Tip Jar">
+				<div class="title">
+					Tip Calculator
+				</div>
+			</a>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!-- Contains dummy contact info -->
+	<footer id="contact">
+		<h2>Contact Info</h2>
+		<h4>Email: karam.keyrouz@hotmail.com</h4>
+		<h4>Phone: 0000000000</h4>
+	</footer>
+</body>
+</html>
